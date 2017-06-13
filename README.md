@@ -11,7 +11,7 @@ To use the API:
     import zenyatta from '@gradealabs/zenyatta'
 
     zenyatta([ 'src/', 'static' ], 'dest/')
-      .then(() => console.log('copied'))
+      .then(() => console.log('step into the iris'))
       .catch(error => console.error(error))
 
 To use the CLI:
@@ -75,7 +75,7 @@ Example:
     // exist already. Also, copy the entire static directory to dest.
     // Ends up with something like: dest/index.js, dest/jquery.min.js
     zenyatta([ 'src/', 'static' ], 'dest/')
-      .then(() => console.log('copied'))
+      .then(() => console.log('step into the iris'))
       .catch(error => console.error(error))
 
 ## Building
