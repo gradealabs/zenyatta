@@ -1,0 +1,37 @@
+{
+    "parser": "babel-eslint",
+    "extends": [ "standard", "plugin:react/recommended" ],
+    "plugins": [
+        "standard",
+        "promise",
+        "react"
+    ],
+    "env": {
+        "node": true,
+        "browser": true,
+        "jquery": true,
+        "mocha": true
+    },
+    "globals": {
+        "_": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2016,
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "classes": true,
+            "arrowFunctions": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "experimentalObjectRestSpread": true,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "restParams": true
+        }
+    },
+    "rules": {
+        "react/prop-types": 1
+    }
+}
