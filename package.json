@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Copies any file or directory to a destination directory",
   "private": true,
   "bin": {
