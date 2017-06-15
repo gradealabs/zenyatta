@@ -1,10 +1,10 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Copies any file or directory to a destination directory",
   "private": true,
   "bin": {
-    "zenyatta": "./lib.cli.js"
+    "zenyatta": "./lib/cli.js"
   },
   "main": "./lib/index.js",
   "scripts": {
