@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -15,7 +15,7 @@
     "clean": "widowmaker lib coverage"
   },
   "keywords": [],
-  "author": "Darren Schnare <schnare.d@gmail.com>",
+  "author": "Darren Schnare <dschnare@gradealabs.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/gradealabs/zenyatta"
