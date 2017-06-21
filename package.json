@@ -1,8 +1,7 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Copies any file or directory to a destination directory",
-  "private": true,
   "bin": {
     "zenyatta": "./lib/cli.js"
   },
@@ -17,14 +16,20 @@
   },
   "keywords": [],
   "author": "Darren Schnare <schnare.d@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gradealabs/zenyatta"
+  },
+  "bugs": {
+    "url": "https://github.com/gradealabs/zenyatta/issues"
+  },
   "license": "MIT",
   "files": [
-    "lib",
-    "dist"
+    "lib"
   ],
   "devDependencies": {
-    "@gradealabs/fs-utils": "github:gradealabs/fs-utils",
-    "@gradealabs/widowmaker": "github:gradealabs/widowmaker",
+    "@gradealabs/fs-utils": "2.0.3",
+    "@gradealabs/widowmaker": "2.0.2",
     "@types/mocha": "2.2.41",
     "@types/node": "7.0.31",
     "@types/sinon": "2.3.1",

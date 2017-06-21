@@ -4,7 +4,7 @@ Copies any file or directory to a destination directory
 
 ## Quick Start
 
-    npm install gradealabs/zenyatta -S
+    npm install @gradealabs/zenyatta -S
 
 To use the API:
 
