@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -14,7 +14,7 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [],
+  "keywords": ["copy", "file", "directory~"],
   "author": "Darren Schnare <dschnare@gradealabs.com>",
   "repository": {
     "type": "git",
