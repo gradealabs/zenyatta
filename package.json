@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -8,7 +8,9 @@
   "main": "./lib/index.js",
   "scripts": {
     "setup": "ts-node ./scripts/setup",
+    "prepublish": "npm run build",
     "audit": "npm outdated --long",
+    "pretest": "npm run build",
     "test": "cross-env NODE_ENV=test TS_NODE_PROJECT=./tsconfig.test.json nyc mocha",
     "build": "npm run build:node",
     "build:node": "tsc -p tsconfig.node.json",

@@ -27,7 +27,7 @@
     "**/*.d.ts",
     "coverage/**",
     "lib/**",
-    "**/_fixtures/**'
+    "**/_fixtures/**"
   ],
   "extension": [
     ".ts"

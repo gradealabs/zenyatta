@@ -5,8 +5,8 @@ import zenyatta from './index'
 
 if (require.main === module) {
   yargs(process.argv.slice(2))
-    .usage('Usage: zenyatta srcfile srcfile ... --dest dir [options]')
-    .env('COPY_ASSETS')
+    .usage('Usage: zenyatta src[:dest] src[:dest] ... [options]')
+    .env('ZENYATTA')
     .config()
     .options({
       'verbose': {
@@ -20,12 +20,17 @@ if (require.main === module) {
         default: false,
         describe: 'Only copy new files'
       },
+      'nodot': {
+        type: 'boolean',
+        default: true,
+        describe: 'Do not copy files starting with "."'
+      },
       'dest': {
         alias: 'D',
         type: 'string',
         normalize: true,
-        demandOption: true,
-        describe: 'The destination directory'
+        default: '.',
+        describe: 'The default destination directory'
       }
     })
     .help()
@@ -36,11 +41,24 @@ if (require.main === module) {
     yargs.showHelp()
   } else {
     /** @type {string} */
-    let dest = argv.dest
+    let {
+      dest: defaultDest,
+      _: sources,
+      neweronly: newerOnly,
+      nodot: noDot
+    } = argv
     // Ensure dest has a trailing slash
-    dest = dest.replace(/\/$|\\$/, '').replace(/\/|\\/g, path.sep) + path.sep
+    defaultDest = defaultDest
+      .replace(/\/$|\\$/, '')
+      .replace(/\/|\\/g, path.sep) + path.sep
+
+    sources = sources.map(x => {
+      const [ src, dest = defaultDest ] = x.split(':')
+      return { src, dest }
+    })
+
     const start = new Date().getTime()
-    zenyatta(argv._, dest, { newerOnly: argv.newerOnly })
+    zenyatta(sources, { newerOnly, noDot })
       .then(() => new Date().getTime() - start)
       .then(elapsed => {
         if (argv.verbose) {

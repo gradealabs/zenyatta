@@ -18,8 +18,8 @@ import { cp } from '@gradealabs/fs-utils'
  * newerOnly  Only newer files will be copied (if the destination alredy exists)
  * noDot  Determines if dot files should be ignored
  */
-export default function zenyatta (files: string[], dest: string, { newerOnly = true, noDot = true } = {}) {
+export default function zenyatta (sources: {src:string, dest:string}[], { newerOnly = true, noDot = true } = {}) {
   return Promise.all(
-    files.map(file => cp(file, dest, { newerOnly, noDot }))
+    sources.map(x => cp(x.src, x.dest, { newerOnly, noDot }))
   )
 }
