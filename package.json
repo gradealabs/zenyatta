@@ -16,7 +16,7 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [],
+  "keywords": ["copy", "file", "directory"],
   "author": "Darren Schnare <dschnare@gradealabs.com>",
   "repository": {
     "type": "git",
