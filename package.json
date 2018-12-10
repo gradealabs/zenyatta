@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/zenyatta",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -58,7 +58,7 @@
   },
   "dependencies": {},
   "engines": {
-    "node": "6.x",
-    "npm": "3.x"
+    "node": ">=6.x",
+    "npm": ">=3.x"
   }
 }
