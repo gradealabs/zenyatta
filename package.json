@@ -1,6 +1,6 @@
 {
-  "name": "@gradealabs/zenyatta",
-  "version": "3.0.1",
+  "name": "@launchfort/zenyatta",
+  "version": "3.0.2",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -17,44 +17,44 @@
     "clean": "widowmaker lib coverage"
   },
   "keywords": ["copy", "file", "directory"],
-  "author": "Darren Schnare <dschnare@gradealabs.com>",
+  "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gradealabs/zenyatta"
+    "url": "https://github.com/launchfort/zenyatta"
   },
   "bugs": {
-    "url": "https://github.com/gradealabs/zenyatta/issues"
+    "url": "https://github.com/launchfort/zenyatta/issues"
   },
   "license": "MIT",
   "files": [
     "lib"
   ],
   "devDependencies": {
-    "@gradealabs/fs-utils": "2.0.3",
-    "@gradealabs/widowmaker": "2.0.2",
-    "@types/mocha": "2.2.41",
-    "@types/node": "7.0.31",
-    "@types/sinon": "2.3.1",
-    "@types/yargs": "6.6.0",
+    "@launchfort/fs-utils": "2.2.6",
+    "@launchfort/widowmaker": "2.0.5",
+    "@types/mocha": "5.2.6",
+    "@types/node": "11.11.4",
+    "@types/sinon": "7.0.10",
+    "@types/yargs": "12.0.10",
     "babel": "6.23.0",
-    "babel-eslint": "7.2.3",
+    "babel-eslint": "10.0.1",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.23.0",
-    "cross-env": "5.0.1",
-    "eslint": "4.0.0",
-    "eslint-config-standard": "10.2.1",
-    "eslint-plugin-import": "2.3.0",
-    "eslint-plugin-node": "5.0.0",
-    "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-react": "7.0.1",
-    "eslint-plugin-standard": "3.0.1",
-    "mocha": "3.4.2",
-    "nyc": "11.0.2",
-    "sinon": "2.3.4",
-    "source-map-support": "0.4.15",
-    "ts-node": "3.0.6",
-    "typescript": "2.3.4",
-    "yargs": "8.0.2"
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "cross-env": "5.2.0",
+    "eslint": "5.15.3",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-standard": "4.0.0",
+    "mocha": "6.0.2",
+    "nyc": "13.3.0",
+    "sinon": "7.3.0",
+    "source-map-support": "0.5.11",
+    "ts-node": "8.0.3",
+    "typescript": "3.3.4000",
+    "yargs": "13.2.2"
   },
   "dependencies": {},
   "engines": {

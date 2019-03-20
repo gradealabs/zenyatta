@@ -4,11 +4,11 @@ Copies any file or directory to a destination directory
 
 ## Quick Start
 
-    npm install @gradealabs/zenyatta -S
+    npm install @launchfort/zenyatta -S
 
 To use the API:
 
-    import zenyatta from '@gradealabs/zenyatta'
+    import zenyatta from '@launchfort/zenyatta'
 
     zenyatta([ 'src/', 'static' ], 'dest/')
       .then(() => console.log('step into the iris'))
@@ -69,7 +69,7 @@ destination directory path with `'/'` or `'\'`.
 
 Example:
 
-    import zenyatta from '@gradealabs/zenyatta'
+    import zenyatta from '@launchfort/zenyatta'
 
     // Copy all files in src into dest, where dest will be created if it doesn't
     // exist already. Also, copy the entire static directory to dest.

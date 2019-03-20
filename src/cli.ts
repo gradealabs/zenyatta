@@ -40,25 +40,18 @@ if (require.main === module) {
   if (argv._.length === 0) {
     yargs.showHelp()
   } else {
-    /** @type {string} */
-    let {
-      dest: defaultDest,
-      _: sources,
-      neweronly: newerOnly,
-      nodot: noDot
-    } = argv
     // Ensure dest has a trailing slash
-    defaultDest = defaultDest
+    const defaultDest = (argv.dest as string)
       .replace(/\/$|\\$/, '')
       .replace(/\/|\\/g, path.sep) + path.sep
 
-    sources = sources.map(x => {
+    const sources = argv._.map(x => {
       const [ src, dest = defaultDest ] = x.split(':')
       return { src, dest }
     })
 
     const start = new Date().getTime()
-    zenyatta(sources, { newerOnly, noDot })
+    zenyatta(sources, { newerOnly: !!argv.neweronly, noDot: !!argv.nodot })
       .then(() => new Date().getTime() - start)
       .then(elapsed => {
         if (argv.verbose) {
