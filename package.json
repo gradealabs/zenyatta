@@ -1,6 +1,6 @@
 {
   "name": "@launchfort/zenyatta",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Copies any file or directory to a destination directory",
   "bin": {
     "zenyatta": "./lib/cli.js"
@@ -16,7 +16,11 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": ["copy", "file", "directory"],
+  "keywords": [
+    "copy",
+    "file",
+    "directory"
+  ],
   "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
@@ -53,10 +57,11 @@
     "sinon": "7.3.0",
     "source-map-support": "0.5.11",
     "ts-node": "8.0.3",
-    "typescript": "3.3.4000",
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
     "yargs": "13.2.2"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=6.x",
     "npm": ">=3.x"
